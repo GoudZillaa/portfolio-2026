@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const SkillsSection = lazy(() => import("@/components/portfolio/SkillsSection"));
 const ExperienceSection = lazy(() => import("@/components/portfolio/ExperienceSection"));
 const ProjectsSection = lazy(() => import("@/components/portfolio/ProjectsSection"));
+const ProjectsSectionNew = lazy(() => import("@/components/portfolio/ProjectsSectionNew"));
 const AboutSection = lazy(() => import("@/components/portfolio/AboutSection"));
 const ContactCTA = lazy(() => import("@/components/portfolio/ContactCTA"));
 const Footer = lazy(() => import("@/components/portfolio/Footer"));
@@ -16,6 +17,7 @@ const Footer = lazy(() => import("@/components/portfolio/Footer"));
 const MemoizedSkills = memo(SkillsSection);
 const MemoizedExperience = memo(ExperienceSection);
 const MemoizedProjects = memo(ProjectsSection);
+const MemoizedProjectsNew = memo(ProjectsSectionNew);
 const MemoizedAbout = memo(AboutSection);
 const MemoizedContactCTA = memo(ContactCTA);
 const MemoizedFooter = memo(Footer);
@@ -133,11 +135,13 @@ const Index = () => {
       <Suspense fallback={<div className="h-96 flex items-center justify-center font-mono text-xs opacity-50">Loading sections...</div>}>
         <MemoizedSkills />
         <MemoizedExperience />
-        <MemoizedProjects />
+        {/* <MemoizedProjects /> */}
+        <MemoizedProjectsNew />
         <MemoizedAbout />
         <MemoizedContactCTA />
         <MemoizedFooter />
       </Suspense>
+
 
       <ScrollingGodzilla />
     </div>
