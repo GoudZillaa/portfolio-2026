@@ -20,7 +20,8 @@ const Navbar = () => {
       transition={{ duration: 0.5, delay: 1 }}
       className="fixed top-6 left-0 right-0 z-50 flex flex-col items-center pointer-events-none px-4 gap-4"
     >
-      <nav className="glass rounded-full px-6 py-3 flex items-center justify-between pointer-events-auto border border-border/40 shadow-xl w-full max-w-4xl bg-background/30 dark:bg-background/10 backdrop-blur-md">
+      <nav className="bg-background rounded-full px-6 py-3 flex items-center justify-between pointer-events-auto border border-border shadow-xl w-full max-w-4xl">
+
         <a href="#" className="font-heading text-lg font-extrabold text-foreground flex items-center gap-2 tracking-tight">
           {"<AG />"}
         </a>
@@ -57,8 +58,9 @@ const Navbar = () => {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden glass rounded-3xl pointer-events-auto border border-border/40 w-full max-w-sm p-5 shadow-2xl bg-background/80 dark:bg-background/60 backdrop-blur-xl"
+          className="md:hidden bg-background rounded-3xl pointer-events-auto border border-border w-full max-w-sm p-5 shadow-2xl"
         >
+
           <div className="flex flex-col space-y-2 text-center">
             {links.map((link) => (
               <a

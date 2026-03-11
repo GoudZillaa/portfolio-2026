@@ -78,11 +78,11 @@ const ProjectsSection = () => {
               <MagicCard
                 className="rounded-xl h-full project-glow-card"
                 gradientSize={320}
-                gradientColor="#2a2a2a"
                 gradientFrom={project.gradientFrom}
                 gradientTo={project.gradientTo}
                 gradientOpacity={0}
               >
+
                 <div style={{ "--project-color": project.gradientFrom } as React.CSSProperties} className="h-full">
                   <a
                     href={project.link}
@@ -91,9 +91,10 @@ const ProjectsSection = () => {
                     className="group block p-6 h-full relative"
                   >
                     <div
-                      className="absolute top-0 right-0 px-3 py-1 text-xs font-mono rounded-bl-lg rounded-tr-xl border-l border-b border-border/30 bg-background/50 backdrop-blur-sm"
+                      className="absolute top-0 right-0 px-3 py-1 text-xs font-mono rounded-bl-lg rounded-tr-xl border-l border-b border-border/30 bg-background"
                       style={{ color: "var(--project-color)" }}
                     >
+
                       {project.type}
                     </div>
 
@@ -144,11 +145,11 @@ const ProjectsSection = () => {
                 <MagicCard
                   className="rounded-xl h-full project-glow-card"
                   gradientSize={200}
-                  gradientColor="#282828"
                   gradientFrom="#9E7AFF"
                   gradientTo="#4FFFB0"
                   gradientOpacity={0}
                 >
+
                   <div style={{ "--project-color": "#9E7AFF" } as React.CSSProperties} className="h-full">
                     <a
                       href={project.link}

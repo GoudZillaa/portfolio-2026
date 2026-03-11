@@ -27,7 +27,8 @@ const experiences = [
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="py-32 px-6 bg-card/30">
+    <section id="experience" className="py-32 px-6 bg-background">
+
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -55,8 +56,9 @@ const ExperienceSection = () => {
                 transition={{ delay: idx * 0.2 }}
                 className="relative pl-8 md:pl-20"
               >
-                {/* Timeline dot — dot-pulse uses scale+opacity (GPU composited, no paint) */}
-                <div className="absolute left-0 md:left-8 top-2 w-3 h-3 rounded-full bg-black dark:bg-white -translate-x-[5px] dot-pulse" />
+                {/* Timeline dot — solid circle */}
+                <div className="absolute left-0 md:left-8 top-2 w-3 h-3 rounded-full bg-black dark:bg-white -translate-x-[5px]" />
+
 
                 <div className="card-solid rounded-xl p-6 border border-border/30">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">

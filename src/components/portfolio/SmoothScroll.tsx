@@ -10,13 +10,14 @@ const SmoothScroll = ({ children }: SmoothScrollProps) => {
     <ReactLenis
       root
       options={{
-        lerp: 0.1,
-        duration: 1.5,
+        lerp: 0.15, // Increased from 0.1 for more responsiveness
+        duration: 1.2, // Decreased from 1.5 for faster response
         smoothWheel: true,
         wheelMultiplier: 1,
-        touchMultiplier: 2,
+        touchMultiplier: 1.5, // Slightly reduced to prevent over-scrolling
         infinite: false,
       }}
+
     >
       {children}
     </ReactLenis>

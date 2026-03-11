@@ -56,10 +56,11 @@ const ImpactHero = () => {
                     transition={{ duration: 0.8 }}
                     className="mb-8"
                 >
-                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-mono text-gray-500 dark:text-white mt-10 md:mt-0 shadow-sm border border-border">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background mt-10 md:mt-0 shadow-sm border border-border text-sm font-mono text-gray-500 dark:text-white">
                         <span className="w-2 h-2 rounded-full bg-gray-500 dark:bg-white" />
                         Available for opportunities
                     </span>
+
                 </motion.div>
 
                 {/* Main headline */}
@@ -97,7 +98,8 @@ const ImpactHero = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, delay: 0.5 }}
-                            className="text-lg md:text-xl text-muted-foreground font-mono max-w-xl mx-auto mb-12 bg-background/50 backdrop-blur-sm p-4 rounded-xl border border-border/50"
+                            className="text-lg md:text-xl text-muted-foreground font-mono max-w-xl mx-auto mb-12 bg-background p-4 rounded-xl border border-border/50"
+
                         >
                             full-stack developer crafting <span className="text-foreground">scalable</span> frontends
                             & <span className="text-cyber-lavender">robust</span> backends
@@ -121,15 +123,17 @@ const ImpactHero = () => {
                                 href="https://github.com/GoudZillaa"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-8 py-4 rounded-lg glass font-heading font-bold text-sm tracking-wide transition-all duration-300 hover:-translate-y-[2px] hover:shadow-lg inline-flex items-center gap-2 text-foreground"
+                                className="px-8 py-4 rounded-lg bg-background border border-border font-heading font-bold text-sm tracking-wide transition-all duration-300 hover:-translate-y-[2px] hover:shadow-lg inline-flex items-center gap-2 text-foreground"
                             >
                                 GITHUB
                                 <span className="text-xs">↗</span>
                             </a>
+
                             <a
                                 href="#contact-cta"
-                                className="px-8 py-4 rounded-lg border border-border font-heading font-bold text-sm tracking-wide transition-all duration-300 hover:-translate-y-[2px] hover:shadow-lg inline-flex items-center gap-2 text-foreground bg-background/50 backdrop-blur-sm"
+                                className="px-8 py-4 rounded-lg border border-border font-heading font-bold text-sm tracking-wide transition-all duration-300 hover:-translate-y-[2px] hover:shadow-lg inline-flex items-center gap-2 text-foreground bg-background"
                             >
+
                                 CONTACT
                             </a>
                         </motion.div>
