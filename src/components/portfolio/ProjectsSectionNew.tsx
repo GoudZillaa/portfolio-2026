@@ -1,5 +1,5 @@
 import { ArrowUpRight, ArrowLeft, ArrowRight } from "lucide-react";
-import { memo, useRef, useState, useMemo } from "react";
+import { memo, useRef, useState, useMemo, useEffect } from "react";
 
 
 const allProjects = [
@@ -25,7 +25,15 @@ const allProjects = [
     tech: ["Next.js", "Tailwind"],
     link: "https://smartospheresolutions.com",
     type: "Personal",
-    color: "#6dd89e", // Green
+    color: "#94a3b8", // Gray
+  },
+  {
+    title: "Moti Paradise",
+    description: "Luxury villa project with a private pool and scenic views. Integrated WordPress API for blog fetching.",
+    tech: ["Next.js", "WordPress API", "Tailwind"],
+    link: "https://motiparadise.vercel.app/",
+    type: "Freelance",
+    color: "#ccff00", // Neon Yellow
   },
   {
     title: "Offices N More",
@@ -58,7 +66,7 @@ const allProjects = [
     link: "https://ai-course-amber.vercel.app/",
     type: "Personal",
     color: "#facab8", // Amber
-  }
+  },
 ];
 
 const ProjectCard = ({ project }: { project: any; index: number }) => {
@@ -72,9 +80,9 @@ const ProjectCard = ({ project }: { project: any; index: number }) => {
         href={project.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="block h-full w-full p-8 flex flex-col justify-between"
+        className="block h-full w-full p-8 flex flex-col"
       >
-        <div className="flex justify-between items-start">
+        <div className="flex justify-between items-start mb-8">
           <span className="px-4 py-1.5 rounded-full border border-black/10 bg-black/5 text-black/60 text-[10px] font-mono uppercase tracking-widest">
             {project.type}
           </span>
@@ -84,20 +92,21 @@ const ProjectCard = ({ project }: { project: any; index: number }) => {
 
         </div>
 
-        <div>
+        <div className="flex-grow">
           <h3 className="text-3xl md:text-4xl font-bold text-black mb-4 leading-[1.1] tracking-tighter font-heading">
             {project.title}
           </h3>
-          <p className="text-black/80 text-base md:text-lg leading-snug mb-8 line-clamp-3 font-medium">
+          <p className="text-black/80 text-base md:text-lg leading-snug mb-8 line-clamp-4 font-medium">
             {project.description}
           </p>
-          <div className="flex flex-wrap gap-2">
-            {project.tech.map((t: string) => (
-              <span key={t} className="text-[11px] font-mono uppercase tracking-widest text-black/50 bg-black/5 px-2 py-0.5 rounded">
-                {t}
-              </span>
-            ))}
-          </div>
+        </div>
+
+        <div className="flex flex-wrap gap-2 mt-auto">
+          {project.tech.map((t: string) => (
+            <span key={t} className="text-[11px] font-mono uppercase tracking-widest text-black/50 bg-black/5 px-2 py-0.5 rounded">
+              {t}
+            </span>
+          ))}
         </div>
 
       </a>
@@ -126,6 +135,22 @@ const ProjectsSectionNew = () => {
       });
     }
   };
+
+  useEffect(() => {
+    const scrollEl = scrollRef.current;
+    if (!scrollEl) return;
+
+    const handleWheelNative = (e: WheelEvent) => {
+      if (e.shiftKey) {
+        e.preventDefault();
+        e.stopPropagation();
+        scrollEl.scrollLeft += e.deltaY * 2.5;
+      }
+    };
+
+    scrollEl.addEventListener("wheel", handleWheelNative, { passive: false });
+    return () => scrollEl.removeEventListener("wheel", handleWheelNative);
+  }, []);
 
   return (
     <section id="projects" className="py-32 px-6 bg-[#fcfcfc] dark:bg-black/5">

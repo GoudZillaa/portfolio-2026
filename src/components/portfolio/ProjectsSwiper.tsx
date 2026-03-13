@@ -47,6 +47,15 @@ const swiperProjects = [
         image: "https://images.unsplash.com/photo-1461896836934-bd45ba97b2a4?w=800&h=500&fit=crop",
         color: "cyber-sky",
     },
+    {
+        title: "Moti Paradise",
+        description: "Luxury villa project in Udaipur. Features a custom WordPress API integration for dynamic blog fetching.",
+        tech: ["Next.js", "WordPress API", "Tailwind CSS"],
+        link: "https://motiparadise.vercel.app/",
+        type: "freelance",
+        image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&h=500&fit=crop",
+        color: "neon-yellow",
+    },
 ];
 
 const ProjectsSwiper = () => {

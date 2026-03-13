@@ -38,6 +38,15 @@ const featuredProjects = [
     gradientFrom: "#f55b90",
     gradientTo: "#38BDF8",
   },
+  {
+    title: "Moti Paradise",
+    description: "Luxury villa project in Udaipur. Features a custom WordPress API integration for dynamic blog fetching.",
+    tech: ["Next.js", "WordPress API", "Tailwind CSS"],
+    link: "https://motiparadise.vercel.app/",
+    type: "freelance",
+    gradientFrom: "#ccff00",
+    gradientTo: "#937ff0",
+  },
 ];
 
 const otherProjects = [
