@@ -23,7 +23,7 @@ const allProjects = [
     title: "Vignan Electronics",
     description: "Ecommerce and landing page solutions for an electronics manufacturing firm.",
     tech: ["Next.js", "PHP"],
-    link: "https://vignanelectronics.com",
+    link: "https://vignan-mu.vercel.app/",
     type: "Freelance",
     color: "#83a5f9", // Blue
   },

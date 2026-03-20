@@ -50,7 +50,7 @@ const featuredProjects = [
 ];
 
 const otherProjects = [
-  { title: "Vignan Electronics", tech: "Next.js + PHP + MySQL", link: "https://vignanelectronics.com" },
+  { title: "Vignan Electronics", tech: "Next.js + PHP + MySQL", link: "https://vignan-mu.vercel.app/" },
   { title: "Smartosphere Solutions", tech: "Next.js", link: "https://smartospheresolutions.com" },
   { title: "Offices N More CRM", tech: "Laravel + Tailwind", link: "https://crm.officesnmore.in" },
   { title: "GLX Aspire", tech: "CodeIgniter → Laravel", link: "https://glxaspire.in" },
