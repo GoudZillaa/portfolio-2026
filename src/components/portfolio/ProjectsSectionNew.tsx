@@ -4,6 +4,14 @@ import { memo, useRef, useState, useMemo, useEffect } from "react";
 
 const allProjects = [
   {
+    title: "AI Course Builder",
+    description: "Web app that generates structured learning paths based on the Pareto principle.",
+    tech: ["MERN", "Tailwind"],
+    link: "https://ai-course-amber.vercel.app/",
+    type: "Personal",
+    color: "#facab8", // Amber
+  },
+  {
     title: "VP Group Global",
     description: "Custom company website for construction provider with lead collection to Excel.",
     tech: ["Next.js", "Responsive"],
@@ -58,14 +66,6 @@ const allProjects = [
     link: "https://github.com/GoudZillaa/form-pilot",
     type: "Personal",
     color: "#9E7AFF", // Purple
-  },
-  {
-    title: "AI Course Builder",
-    description: "Web app that generates structured learning paths based on the Pareto principle.",
-    tech: ["MERN", "Tailwind"],
-    link: "https://ai-course-amber.vercel.app/",
-    type: "Personal",
-    color: "#facab8", // Amber
   },
 ];
 

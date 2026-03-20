@@ -3,6 +3,15 @@ import { useState } from "react";
 
 const swiperProjects = [
     {
+        title: "AI Course Builder",
+        description: "Web app that generates structured learning paths based on the Pareto principle — learn the 20% to unlock 80% potential.",
+        tech: ["MERN", "MUI", "Tailwind CSS"],
+        link: "https://ai-course-amber.vercel.app/",
+        type: "personal",
+        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=500&fit=crop",
+        color: "cyber-pink",
+    },
+    {
         title: "Notion Context CLI",
         description: "A CLI tool that lets developers access Notion data inside projects and integrate with AI workflows. Published as an npm package.",
         tech: ["Node.js", "npm", "CLI", "Notion API"],
@@ -19,15 +28,6 @@ const swiperProjects = [
         type: "personal",
         image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=500&fit=crop",
         color: "cyber-lavender",
-    },
-    {
-        title: "AI Course Builder",
-        description: "Web app that generates structured learning paths based on the Pareto principle — learn the 20% to unlock 80% potential.",
-        tech: ["MERN", "MUI", "Tailwind CSS"],
-        link: "https://ai-course-amber.vercel.app/",
-        type: "personal",
-        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=500&fit=crop",
-        color: "cyber-pink",
     },
     {
         title: "VP Group Global",
