@@ -24,7 +24,7 @@ const allProjects = [
     description: "Ecommerce and landing page solutions for an electronics manufacturing firm.",
     tech: ["Next.js", "PHP"],
     link: "https://vignan-mu.vercel.app/",
-    type: "Freelance",
+    type: "Internship",
     color: "#83a5f9", // Blue
   },
   {
@@ -32,7 +32,7 @@ const allProjects = [
     description: "Modern landing page for a tech solutions provider with clear CTA paths.",
     tech: ["Next.js", "Tailwind"],
     link: "https://smartospheresolutions.com",
-    type: "Personal",
+    type: "Internship",
     color: "#94a3b8", // Gray
   },
   {
@@ -40,7 +40,7 @@ const allProjects = [
     description: "Luxury villa project with a private pool and scenic views. Integrated WordPress API for blog fetching.",
     tech: ["Next.js", "WordPress API", "Tailwind"],
     link: "https://motiparadise.vercel.app/",
-    type: "Freelance",
+    type: "Internship",
     color: "#ccff00", // Neon Yellow
   },
   {
@@ -48,7 +48,7 @@ const allProjects = [
     description: "Custom CRM system built for managing workspace leads and customer interactions.",
     tech: ["Laravel", "Tailwind"],
     link: "https://crm.officesnmore.in",
-    type: "Freelance",
+    type: "Internship",
     color: "#937ff0", // Lavender
   },
   {
