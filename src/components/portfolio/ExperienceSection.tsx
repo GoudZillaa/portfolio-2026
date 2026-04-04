@@ -23,6 +23,17 @@ const experiences = [
       "Maintained and updated existing websites, improving performance and usability",
     ],
   },
+  {
+    role: "Web-Developer Intern",
+    company: "Codec Technologies",
+    duration: "6 Month Internship",
+    points: [
+      "Developed and maintained web applications using React.js.",
+      "Assisted in minor UI updates using React.js.",
+      "Supported basic content updates and API integrations.",
+      "Helped identify and fix simple bugs in existing applications.",
+    ],
+  },
 ];
 
 const ExperienceSection = () => {

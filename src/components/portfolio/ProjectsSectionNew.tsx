@@ -4,6 +4,14 @@ import { memo, useRef, useState, useMemo, useEffect } from "react";
 
 const allProjects = [
   {
+    title: "Share to Save",
+    description: "React Native app that provides a centralized location to save and rewatch reels or short-form content shared from other apps.",
+    tech: ["React Native", "Expo"],
+    link: "https://github.com/GoudZillaa/share-to-save", // Placeholder github link, since normally the user hosts it on github or similar
+    type: "Personal",
+    color: "#ff9a76", // Coral
+  },
+  {
     title: "AI Course Builder",
     description: "Web app that generates structured learning paths based on the Pareto principle.",
     tech: ["MERN", "Tailwind"],
