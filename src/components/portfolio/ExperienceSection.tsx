@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    role: "Front-End Developer Intern",
+    role: "Web Developer Intern",
     company: "Ace360Degree",
     duration: "6 Month Internship",
     points: [
